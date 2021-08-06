@@ -11,9 +11,10 @@ body {
    height: 109px;
    background-color: #fff;
    &__body {
+      height: 109px;
       display: flex;
       justify-content: space-between;
-
+      align-items: center;
    }
 
    &__logo {
