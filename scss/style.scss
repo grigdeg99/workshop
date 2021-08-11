@@ -210,6 +210,36 @@ body {
    }
 }
 
+.frree {
+   height: 150px;
+   background-color: #4c7fa3;
+   display: flex;
+   align-items: center;
+   &__inner {
+      h2{
+         font-size: 36px;
+         font-weight: bold;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         text-align: left;
+         color: #000
+      }
+      span{
+         margin-left: 10px;
+         font-size: 36px;
+         font-weight: bold;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         text-align: left;
+         color: #9dc7d1;
+      }
+   }
+}
+
 .remonts {
    padding: 105px 0 100px 0;
    &__tabs {
@@ -440,9 +470,187 @@ body {
       background-color: #f2f9fe;
    }
 }
-.container {
-}
 
+.photogallerey{
+   background-color:rgba(165, 98, 98, 0);
+}
+//slider
+
+.fade {
+   animation-name: fade;
+   animation-duration: 2.5s;
+ 
+ }
+ 
+ @keyframes fade {
+   from {
+     opacity: 0.1;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+ 
+
+ .slider {
+   margin-top: 50px;
+   position: relative;
+   width: 100%;
+   &_wrap{
+     width: 100%;
+     position: relative;
+   }
+   &_item{
+     width: 80%;
+     height: 10%;
+     
+     margin: 0 auto;
+     margin-top: 50px;
+     position: relative;
+     margin-bottom: 50px;
+     img{
+       max-width: 100%;
+       
+       display: block;
+       margin: 0 auto;
+     }
+   }
+   &_prev{
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     width: 90px;
+     left: 2%;
+     background-color: rgba(24, 161, 195, 0.6);
+     transition: 0.3s;
+     height: 100%;
+   }
+   &_prev:hover{
+     background-color: rgba(0, 0, 0, 0.4);
+     .arrow-left{
+       opacity: 1;
+     }
+   }
+   .arrow-left{
+     width: 30px;
+     height: 30px;
+     background: url(../img/arrow/left-arrow.svg) center no-repeat;
+     background-size: cover;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%);
+     
+     transition: 1s;
+   }
+   &_next{
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      width: 90px;
+      background-color: rgba(24, 161, 195, 0.6);
+      transition: 0.3s;
+      height: 100%;
+      right: 2%;
+   }
+   &_next:hover{
+     background-color: rgba(0, 0, 0, 0.4);
+     .arrow-right{
+       opacity: 1;
+     }
+   }
+   .arrow-right{
+      width: 30px;
+      height: 30px;
+      background: url(../img/arrow/right-arrow.svg) center no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      transition: 1s;
+   }
+ }
+
+ .footer {
+    height: 300px;
+    background-color: #2d312f;
+    padding: 30px 0;
+
+   &__tittle {
+      text-align: center;
+      h2{
+         font-size: 30px;
+         font-weight: 700;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1;
+         letter-spacing: normal;
+         color: #fff;
+         text-transform: uppercase;
+      }
+
+      a{
+         font-size: 30px;
+         font-weight: 700;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1;
+         letter-spacing: normal;
+         color: #fff;
+         text-transform: uppercase;
+      }
+   }
+
+   &__social {
+      display: flex;
+      justify-content: center;
+
+      
+   }
+
+   &__vk {
+      padding-left: 10px;
+      height: 40px;
+      width: 40px;
+      img{
+         max-width: 100%;
+      }
+   }
+
+   &__viber {
+      padding-left: 10px;
+      height: 40px;
+      width: 40px;
+      img{
+         max-width: 100%;
+      }
+   }
+
+   &__creator {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      h3{
+         font-size: 20px;
+         font-weight: 300;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         text-align: right;
+         color: rgb(212, 164, 75);
+         padding-right: 20px;
+      }
+     
+      
+      img{
+         height: 40px;
+         width: 40px;
+         max-width: 100%;
+      }
+   }
+}
 
 
 
