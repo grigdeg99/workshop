@@ -82,5 +82,68 @@ window.addEventListener("DOMContentLoaded", function () {
    });
 
 
+   //slider firstscreen
+   function sliderfirstscreen() {
+      let slideIndex = 1,
+         slides = document.querySelectorAll('.firstScreen__slider_item'),
+         prev = document.querySelector('.firstScreen__slider_prev'),
+         next = document.querySelector('.firstScreen__slider_next');
+
+      showSlides(slideIndex);
+
+
+      function showSlides(n) {
+         if (n > slides.length) {
+            slideIndex = 1;
+         }
+         if (n < 1) {
+            slideIndex = slides.length;
+         }
+         slides.forEach((item) => item.style.display = 'none');
+         slides[slideIndex - 1].style.display = 'block';
+
+      }
+
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+
+      }
+
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+
+
+
+      prev.addEventListener('click', function () {
+         plusSlides(-1);
+      });
+
+      next.addEventListener('click', function () {
+         plusSlides(1);
+      });
+
+   }
+
+   sliderfirstscreen();
+
+   //плавный скролл
+
+   const anchors = document.querySelectorAll('a[href*="#"]')
+
+   for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+         e.preventDefault()
+
+         const blockID = anchor.getAttribute('href').substr(1)
+
+         document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+         })
+      })
+   }
+
+
 
 });

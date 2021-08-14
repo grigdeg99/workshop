@@ -63,13 +63,17 @@ body {
 
 
 .header {
-   height: 109px;
    background-color: #fff;
+   position: fixed;
+   width: 100%;
+   z-index: 2;
+   
    &__body {
-      height: 109px;
+      height: 90px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      
    }
 
    &__logo {
@@ -85,14 +89,16 @@ body {
    &__nav {
       display: flex;
       justify-content: space-between;
-      margin-left: -150px;
+      align-items:center;
    }
 
    &__list {
    }
-
+   .heder__social{
+      display: flex;
+   }
    &__link {
-      font-size: 17px;
+      font-size: 20px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -111,47 +117,128 @@ body {
 
    &__numbers {
       font-family: Raleway;
-      font-size: 22px;
-      font-weight: 400;
+      font-size: 30px;
+      font-weight: 700;
       font-stretch: normal;
       font-style: normal;
-      color: #3c3d42;
-      text-decoration: none;
-   }
-
-   &__mail {
-   }
-
-   &__email {
-      font-size: 18px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: left;
       color: #3c3d42;
       text-decoration: none;
    }
 }
 
 .firstScreen {
-   padding: 50px 0 50px 0;
+   padding: 120px 0 50px 0;
    background: url(../img/steps/2.jpg) center center/cover no-repeat;
-   
-
    &__inner {
       display: flex;
-      
+      align-items:center;
    }
-   &__descr {
+   &__slider {
+      flex: 0 0 50%;
       
+      position: relative;
+      width: 100%;
+      &_descr{
+         background-color: #000;
+         
+      }
+      h2{
+         font-size: 30px;
+         font-weight: 300;
+         font-stretch: normal;
+         font-style: normal;
+         letter-spacing: normal;
+         color: #fff;
+         margin: 0;
+         margin-top: 20px;
+         text-align: center;
+      }
+      &_wrap{
+        width: 100%;
+        position: relative;
+      }
+      &_item{
+       
+        
+        
+        margin: 0 auto;
+        
+        position: relative;
+        
+        img{
+          width: 100%;
+          
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      &_prev{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        width: 90px;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 87%;
+      }
+      &_prev:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        .arrow-left{
+          opacity: 1;
+        }
+      }
+      .arrow-left{
+        width: 30px;
+        height: 30px;
+        background: url(../img/arrow/left-arrow.svg) center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        
+        transition: 1s;
+      }
+      &_next{
+         position: absolute;
+         cursor: pointer;
+         top: 0;
+         width: 90px;
+         background-color: rgba(0, 0, 0, 0.1);
+         transition: 0.3s;
+         height: 87%;
+         right: 0%;
+      }
+      &_next:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        .arrow-right{
+          opacity: 1;
+        }
+      }
+      .arrow-right{
+         width: 30px;
+         height: 30px;
+         background: url(../img/arrow/right-arrow.svg) center no-repeat;
+         background-size: cover;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%);
+         transition: 1s;
+         border-radius: 100%;
+      }
+    }
+   
+   &__descr {
+      flex: 0 0  50%
+
    }
    
    &__tittle {
-     text-align: center;
+     text-align: left;
       h1{
-         font-size: 36px;
+         font-size: 40px;
          font-weight: bold;
          font-stretch: normal;
          font-style: normal;
@@ -179,35 +266,40 @@ body {
    }
 
    &__subtittle {
-      text-align: center;
+      text-align: left;
       p{
-         font-size: 18px;
+         font-size: 22px;
          font-weight: normal;
          font-stretch: normal;
          font-style: normal;
          line-height: 1.71;
          letter-spacing: normal;
          
-         color: #9dc7d1; 
+         color: #b4e8f5; 
          margin-top: 45px;
          
       }
    }
 
    &__button {
-      margin-top: 53px;
+      margin-top: 70px;
+      display: inline-block;
+      a{
+         text-decoration: none;
+      }
       button{
-         margin: 0 auto;
          transition: all 0.3s;
       }
    }
    &__button:hover{
      button{
-      background-color: #2d312f;
+      background-color: #000000;
       transition: all 0.3s;
      }
      
    }
+
+
 }
 
 .frree {
@@ -473,12 +565,13 @@ body {
 
 .photogallerey{
    background-color:rgba(165, 98, 98, 0);
+   padding:  75px 0 0 0 ;
 }
 //slider
 
 .fade {
    animation-name: fade;
-   animation-duration: 2.5s;
+   animation-duration: 1.0s;
  
  }
  
@@ -520,8 +613,8 @@ body {
      cursor: pointer;
      top: 0;
      width: 90px;
-     left: 2%;
-     background-color: rgba(24, 161, 195, 0.6);
+     left: 10%;
+     background-color: rgba(0, 0, 0, 0.1);
      transition: 0.3s;
      height: 100%;
    }
@@ -548,10 +641,10 @@ body {
       cursor: pointer;
       top: 0;
       width: 90px;
-      background-color: rgba(24, 161, 195, 0.6);
+      background-color: rgba(0, 0, 0, 0.1);
       transition: 0.3s;
       height: 100%;
-      right: 2%;
+      right: 10%;
    }
    &_next:hover{
      background-color: rgba(0, 0, 0, 0.4);
@@ -569,11 +662,12 @@ body {
       left: 50%;
       transform: translate(-50%);
       transition: 1s;
+      border-radius: 100%;
    }
  }
 
  .footer {
-    height: 300px;
+    
     background-color: #2d312f;
     padding: 30px 0;
 
