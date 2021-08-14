@@ -107,6 +107,12 @@ body {
       text-align: left;
       color: #747a7a;
       text-decoration: none;
+      transition: all 0.3s;
+      padding: 3px;
+   }
+   &__link:hover{
+      background-color: rgba(0,0,0,0.1);
+      transition: all 0.3s;
    }
 
    &__call {
@@ -333,28 +339,326 @@ body {
 }
 
 .remonts {
-   padding: 105px 0 100px 0;
+   padding: 60px 0 50px 0;
+   &__tittle{
+    h2{
+       font-size: 40px;
+       text-transform: uppercase;
+    }  
+   }
    &__tabs {
       display: flex;
-      justify-content: space-between;
       margin-top: 50px;
+
+      
    }
+   .tabs__slider1 {
+      flex: 0 0 50%;
+      
+      position: relative;
+      width: 100%;
+      &_descr{
+         background-color: #000;
+         
+      }
+      h2{
+         font-size: 30px;
+         font-weight: 300;
+         font-stretch: normal;
+         font-style: normal;
+         letter-spacing: normal;
+         color: #fff;
+         margin: 0;
+         margin-top: 20px;
+         text-align: center;
+      }
+      &_wrap{
+        width: 100%;
+        position: relative;
+      }
+      &_item{
+       
+        
+        
+        margin: 0 auto;
+        
+        position: relative;
+        
+        img{
+          width: 100%;
+          
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      &_prev{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        width: 90px;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 84%;
+      }
+      &_prev:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        .arrow-left{
+          opacity: 1;
+        }
+      }
+      .arrow-left{
+        width: 30px;
+        height: 30px;
+        background: url(../img/arrow/left-arrow.svg) center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        
+        transition: 1s;
+      }
+      &_next{
+         position: absolute;
+         cursor: pointer;
+         top: 0;
+         width: 90px;
+         background-color: rgba(0, 0, 0, 0.1);
+         transition: 0.3s;
+         height: 84%;
+         right: 0%;
+      }
+      &_next:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        .arrow-right{
+          opacity: 1;
+        }
+      }
+      .arrow-right{
+         width: 30px;
+         height: 30px;
+         background: url(../img/arrow/right-arrow.svg) center no-repeat;
+         background-size: cover;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%);
+         transition: 1s;
+         border-radius: 100%;
+      }
+    }
+   .tabs__slider2 {
+      flex: 0 0 50%;
+      
+      position: relative;
+      width: 100%;
+      &_descr{
+         background-color: #000;
+         
+      }
+      h2{
+         font-size: 30px;
+         font-weight: 300;
+         font-stretch: normal;
+         font-style: normal;
+         letter-spacing: normal;
+         color: #fff;
+         margin: 0;
+         margin-top: 20px;
+         text-align: center;
+      }
+      &_wrap{
+        width: 100%;
+        position: relative;
+      }
+      &_item{
+       
+        
+        
+        margin: 0 auto;
+        
+        position: relative;
+        
+        img{
+          width: 100%;
+          
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      &_prev{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        width: 90px;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 84%;
+      }
+      &_prev:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        .arrow-left{
+          opacity: 1;
+        }
+      }
+      .arrow-left{
+        width: 30px;
+        height: 30px;
+        background: url(../img/arrow/left-arrow.svg) center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        
+        transition: 1s;
+      }
+      &_next{
+         position: absolute;
+         cursor: pointer;
+         top: 0;
+         width: 90px;
+         background-color: rgba(0, 0, 0, 0.1);
+         transition: 0.3s;
+         height: 84%;
+         right: 0%;
+      }
+      &_next:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        .arrow-right{
+          opacity: 1;
+        }
+      }
+      .arrow-right{
+         width: 30px;
+         height: 30px;
+         background: url(../img/arrow/right-arrow.svg) center no-repeat;
+         background-size: cover;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%);
+         transition: 1s;
+         border-radius: 100%;
+      }
+    }
+   .tabs__slider3 {
+      flex: 0 0 50%;
+      
+      position: relative;
+      width: 100%;
+      &_descr{
+         background-color: #000;
+         
+      }
+      h2{
+         font-size: 30px;
+         font-weight: 300;
+         font-stretch: normal;
+         font-style: normal;
+         letter-spacing: normal;
+         color: #fff;
+         margin: 0;
+         margin-top: 20px;
+         text-align: center;
+      }
+      &_wrap{
+        width: 100%;
+        position: relative;
+      }
+      &_item{
+       
+        
+        
+        margin: 0 auto;
+        
+        position: relative;
+        
+        img{
+          width: 100%;
+          
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      &_prev{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        width: 90px;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 84%;
+      }
+      &_prev:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        .arrow-left{
+          opacity: 1;
+        }
+      }
+      .arrow-left{
+        width: 30px;
+        height: 30px;
+        background: url(../img/arrow/left-arrow.svg) center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        
+        transition: 1s;
+      }
+      &_next{
+         position: absolute;
+         cursor: pointer;
+         top: 0;
+         width: 90px;
+         background-color: rgba(0, 0, 0, 0.1);
+         transition: 0.3s;
+         height: 84%;
+         right: 0%;
+      }
+      &_next:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        .arrow-right{
+          opacity: 1;
+        }
+      }
+      .arrow-right{
+         width: 30px;
+         height: 30px;
+         background: url(../img/arrow/right-arrow.svg) center no-repeat;
+         background-size: cover;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%);
+         transition: 1s;
+         border-radius: 100%;
+      }
+    }
 
    &__list {
       display: inline-block;
+      flex: 0 0 20%;
       .ee {
          margin: 0;
       }
       border-right: 1px solid #dbe2e2;
       padding: 20px 0 20px 0;
-
+   }
+   &__tabs-d{
+      flex:0 0 80%;
 
    }
   
 
    &__item {
       display: flex;
-      justify-content: space-between;
+      
       align-items: center;
       margin-top: 50px;
       position: relative;
@@ -373,10 +677,12 @@ body {
       margin-left: 20px;
       opacity: 0;
       left: 87%;
+      transition: all 0.3s;
    }
    
    &__item:hover:after{
       opacity: 1;
+      transition: all 0.3s;
    }
 
    &__img {
@@ -390,23 +696,26 @@ body {
    }
 
    &__text {
-      padding-left: 40px;
+      text-align: center;
+      padding-left: 20px;
       display: inline-block;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
       letter-spacing: normal;
-      text-align: left;
       color: #9fa9a9;
    }
 
    &__tabsdescr {
-      margin-left: 150px;
+      margin: 0 auto;
+      width: 70%;
+      height: 60%;
+
    }
 
    &__tabs-img {
-      width: 198px;
+      width: 250px;
       height: 165px;
       margin: 0 auto;
       img{
@@ -416,7 +725,6 @@ body {
 
    &__tabs-desc {
       margin-top: 85px;
-      text-align: left;
       h2{
          font-size: 24px;
          font-weight: bold;
@@ -424,7 +732,7 @@ body {
          font-style: normal;
          line-height: normal;
          letter-spacing: normal;
-         text-align: left;
+         text-align: center;
          color: #636c6c;
       }
       p{
@@ -434,9 +742,9 @@ body {
          font-style: normal;
          line-height: 1.5;
          letter-spacing: normal;
-         text-align: left;
+         text-align: center;
          color: #afb8b8;
-         padding-right: 150px;
+         
       }
    }
 }
