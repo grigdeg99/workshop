@@ -90,7 +90,7 @@ body {
 }
 
 .header__logo {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 700;
   font-stretch: normal;
   font-style: normal;
@@ -100,6 +100,7 @@ body {
 }
 
 .header__nav {
+  margin-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,6 +110,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 20px;
+}
+
+.header__list {
+  padding: 0;
+  padding-right: 15px;
 }
 
 .header .heder__social {
@@ -118,13 +125,14 @@ body {
 }
 
 .header__link {
+  padding: 15px;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #747a7a;
   text-decoration: none;
   -webkit-transition: all 0.3s;
@@ -139,7 +147,6 @@ body {
 }
 
 .header__call {
-  margin-right: -110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +163,13 @@ body {
   font-style: normal;
   color: #3c3d42;
   text-decoration: none;
+}
+
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 50px;
 }
 
 .firstScreen {
